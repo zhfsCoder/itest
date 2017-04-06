@@ -3,5 +3,14 @@
 
 <body>
 <h1>MyDear, ZhouZhou's Music field</h1>
+  <h2>We fall in love for <span id="days"> days </span>days </h2>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=810 height=500 src="//music.163.com/outchain/player?type=0&id=628139564&auto=1&height=430"></iframe>
+<script>
+        var startDate = new Date('2017/01/30 00:00');
+        var nowDate = new Date();
+        var s1 = startDate.getTime();
+        var s2 = nowDate.getTime();
+        var day = parseInt((s2 - s1) / (1000 * 60 * 60 * 24)) + 1
+        document.getElementById('days').innerHTML = day;
+    </script>
 </body>
